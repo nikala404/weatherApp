@@ -1,0 +1,83 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather-App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&family=Kdam+Thmor+Pro&family=Nova+Square&family=Outfit&family=Poppins:ital,wght@1,800&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="search-form">
+      <h1>Search Your Town/Country</h1>
+      <form id="Weather-form">
+         <label for="searching"></label><input type="text" placeholder="Town/Country" class="input-form">
+         <button type="submit" class="submit-btn">Submit</button></form>
+    </div>
+    <div class="parent-div">
+      <div class="display-div">
+        <span class="info-location-span weekday"><h2></h2></span>
+        <span class="info-location-span date"><h2></h2></span
+        ><span class="info-location-span location"
+          ><h2>
+          </h2></span
+        >
+
+        <img class="info-img" src="" alt="" />
+        <span class="celsius"></span>
+        <span class="condition"></span>
+      </div>
+      <div class="info-div">
+        <div class="inform-div">
+          <div class="precipation">
+            <span class="title">ULTRAVIOLET LIGHT</span>
+            <span class="value" id="prec"></span></span>
+          </div>
+          <div class="humidity">
+            <span class="title">HUMIDITY</span>
+            <span class="value" id="humi"></span>
+          </div>
+          <div class="wind-speed">
+            <span class="title">WIND SPEED</span>
+            <span class="value" id="wisp"></span>
+          </div>
+        </div>
+
+        <ul class="day-list">
+          <li>
+            <img class="ul-img" src="" alt=""><br />
+            <span class="ul-day"></span><br /><span class="temp"></span>
+          </li>
+          <li>
+            <img class="ul-img" src="" alt=""> <br /><span class="ul-day"></span><br /><span
+              class="temp"
+            >
+
+            </span>
+          </li>
+          <li>
+            <img class="ul-img" src="" alt="">
+            <br />
+            <span class="ul-day"></span><br /><span class="temp"></span>
+          </li>
+          <li>
+            <img class="ul-img" src="" alt=""><br /><span class="ul-day"></span><br /><span
+              class="temp"
+            >
+            </span>
+          </li>
+        </ul>
+        <button class="search-btn">Search location</button>
+      </div>
+    </div>
+  </body>
+</html>
